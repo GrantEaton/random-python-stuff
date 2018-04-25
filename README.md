@@ -28,7 +28,12 @@ output: [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
 >>> map(cube, range(1, 11))
 [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 ```
-
+##### Zip func
+```numberList = [1, 2, 3]
+strList = ['one', 'two', 'three']
+```
+gives
+```{(1, 'one'), (3, 'three'), (2, 'two')}```
 
 ### Queue
 ```>>> from collections import deque
@@ -56,3 +61,22 @@ deque(['Michael', 'Terry', 'Graham'])
 *pythonic*
 ```squares = [x**2 for x in range(10)]```
 
+### Maps
+*create a map*
+```{'one': 1, 'two': 2, 'three': 3}```
+
+*Create map with list of tuples*
+```
+list = [('one', 1), ('two',2), ('three',3)]
+map = dict(list)
+```
+*or do the opposite*
+`items(map)`
+
+###### Methods
+*delete key*
+`del map[key]`
+*check if key in map*
+`key in map`
+*get value from map and delete it*
+pop(map)
