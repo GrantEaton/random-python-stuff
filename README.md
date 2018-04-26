@@ -62,27 +62,29 @@ deque(['Michael', 'Terry', 'Graham'])
 ```squares = [x**2 for x in range(10)]```
 
 ### Maps
-*create a map*
+**create a map**
 ```{'one': 1, 'two': 2, 'three': 3}```
 
-*Create map with list of tuples*
+**Create map with list of tuples**
 ```
 list = [('one', 1), ('two',2), ('three',3)]
 map = dict(list)
 ```
-*or do the opposite*
+**or do the opposite**
 `map.items()`
 
 ###### Methods
-*delete key*
+**delete key**<br />
 `del map[key]`
 
-*check if key in map*
+**check if key in map**<br />
 `key in map`
 
-*get value from map and delete it*
-pop(map)
+**get value from map and delete it**<br />
+`pop(map)`
 
-* get values/keys of map *
-```map.viewkeys()
-map.viewvalues()```
+** get values/keys of map**<br />
+```
+map.viewkeys()
+map.viewvalues()
+```
