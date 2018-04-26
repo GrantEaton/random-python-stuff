@@ -71,12 +71,18 @@ list = [('one', 1), ('two',2), ('three',3)]
 map = dict(list)
 ```
 *or do the opposite*
-`items(map)`
+`map.items()`
 
 ###### Methods
 *delete key*
 `del map[key]`
+
 *check if key in map*
 `key in map`
+
 *get value from map and delete it*
 pop(map)
+
+* get values/keys of map *
+```map.viewkeys()
+map.viewvalues()```
