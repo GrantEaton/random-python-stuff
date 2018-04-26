@@ -83,8 +83,11 @@ map = dict(list)
 **get value from map and delete it**<br />
 `pop(map)`
 
-** get values/keys of map**<br />
+**get values/keys of map**<br />
 ```
 map.viewkeys()
 map.viewvalues()
 ```
+**or both at the same time...**
+```for key, val in map.iteritems():
+      print k, v```
