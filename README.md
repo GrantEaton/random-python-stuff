@@ -40,18 +40,18 @@ gives
 
 | operation     | result                                  |
 |---------------|-----------------------------------------|
-| list[i:j]     | slice of s from i to j                  |
-| list[i:j:k]   | slice of s from i to j with step k      |
-| list.index(x) | index of the first occurrence of x in s |
-| list.count(x) | total number of occurrences of x in s   |
+| str[i:j]      | slice of s from i to j                  |
+| str[i:j:k]    | slice of s from i to j with step k      |
+| str.index(x)  | index of the first occurrence of x in s |
+| str.count(x)  | total number of occurrences of x in s   |
 
-###### join
+###### join (adds a delimeter)
 ```
-str = ""
+str = "-"
 list = ['a', 'b', 'c']
 print str.join(list)
 ```
-prints `abc`
+prints `a-b-c`
 
 ### Queue
 ```>>> from collections import deque
