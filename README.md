@@ -6,7 +6,8 @@ You should use `%s` and only use `%r` for getting debugging information about so
 
 ### lists
 ##### Sort list
-``` student_tuples = [
+``` 
+student_tuples = [
      ('john', 'A', 15),
      ('jane', 'B', 12),
      ('dave', 'B', 10),
@@ -16,20 +17,23 @@ output: [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
 ```
 
 ##### Filter list
-```>>> def f(x): return x % 3 == 0 or x % 5 == 0
+```
+>>> def f(x): return x % 3 == 0 or x % 5 == 0
 ...
 >>> filter(f, range(2, 25))
 [3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24]
 ```
 
 ##### Map func
-```>>> def cube(x): return x*x*x
+```
+>>> def cube(x): return x*x*x
 ...
 >>> map(cube, range(1, 11))
 [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 ```
 ##### Zip func
-```numberList = [1, 2, 3]
+```
+numberList = [1, 2, 3]
 strList = ['one', 'two', 'three']
 ```
 gives
@@ -69,7 +73,8 @@ deque(['Michael', 'Terry', 'Graham'])
 ### Pythonic Stuff
 ##### General loops
 **normal:**
-```>>> squares = []
+```
+>>> squares = []
 >>> for x in range(10):
 ...     squares.append(x**2)
 ...
@@ -81,7 +86,7 @@ deque(['Michael', 'Terry', 'Graham'])
 
 ### Maps
 **create a map**
-```{'one': 1, 'two': 2, 'three': 3}```
+`{'one': 1, 'two': 2, 'three': 3}`
 
 **Create map with list of tuples**
 ```
