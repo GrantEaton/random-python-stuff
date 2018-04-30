@@ -35,6 +35,24 @@ strList = ['one', 'two', 'three']
 gives
 ```{(1, 'one'), (3, 'three'), (2, 'two')}```
 
+### Strings
+##### Access elements & random funcs
+
+| operation     | result                                  |
+|---------------|-----------------------------------------|
+| list[i:j]     | slice of s from i to j                  |
+| list[i:j:k]   | slice of s from i to j with step k      |
+| list.index(x) | index of the first occurrence of x in s |
+| list.count(x) | total number of occurrences of x in s   |
+
+###### join
+```
+str = ""
+list = ['a', 'b', 'c']
+print str.join(list)
+```
+prints `abc`
+
 ### Queue
 ```>>> from collections import deque
 >>> queue = deque(["Eric", "John", "Michael"])
@@ -50,7 +68,7 @@ deque(['Michael', 'Terry', 'Graham'])
 
 ### Pythonic Stuff
 ##### General loops
-*normal:*
+**normal:**
 ```>>> squares = []
 >>> for x in range(10):
 ...     squares.append(x**2)
@@ -89,5 +107,8 @@ map.viewkeys()
 map.viewvalues()
 ```
 **or both at the same time...**
-```for key, val in map.iteritems():
-      print k, v```
+```
+for key, val in map.iteritems():
+      print k, v
+```
+
