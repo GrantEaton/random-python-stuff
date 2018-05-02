@@ -117,3 +117,15 @@ for key, val in map.iteritems():
       print k, v
 ```
 
+### Classes
+
+```
+class Node(object):
+
+    left, right, val;
+    
+    def __init__(self, left right): 
+        self.left = left;
+        self.right = right;
+    
+```
