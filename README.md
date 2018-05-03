@@ -31,6 +31,14 @@ output: [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
 >>> map(cube, range(1, 11))
 [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 ```
+
+##### Reduce 
+```
+>>> def add(x,y): return x+y
+...
+>>> reduce(add, range(1, 11))
+55
+```
 ##### Zip func
 ```
 numberList = [1, 2, 3]
@@ -71,7 +79,7 @@ deque(['Michael', 'Terry', 'Graham'])
 ```
 
 ### Pythonic Stuff
-##### General loops
+##### List Comprehension
 **normal:**
 ```
 >>> squares = []
@@ -81,9 +89,22 @@ deque(['Michael', 'Terry', 'Graham'])
 >>> squares
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
-*pythonic*
+**pythonic**
 ```squares = [x**2 for x in range(10)]```
 
+**with if clause**
+```
+>>> l = []
+>>> for x in vec:
+...      if x >= 0:
+...           l.append(x)
+```
+
+**pythonic**
+```
+>>> [x for x in vec if x >= 0]
+[0, 2, 4]
+```
 ### Maps
 **create a map**
 `{'one': 1, 'two': 2, 'three': 3}`
