@@ -65,6 +65,10 @@ print str.join(list)
 ```
 prints `a-b-c`
 
+### Tuples
+**TUPLES ARE IMMUTABLE**
+
+
 ### Queue
 ```>>> from collections import deque
 >>> queue = deque(["Eric", "John", "Michael"])
