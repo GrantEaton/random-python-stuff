@@ -10,13 +10,13 @@ ADD . /app/
 WORKDIR /app 
 RUN go build -o main . 
 CMD ["/app/main"]
+```
 
 **Build image/ dockerfile**: `$ docker build -t <imagename> .`
 * Only run once you have a Dockerfile
 
 **List Docker Images**: `$ docker image ls`
 
-```
 **Map directory from Docker to local machine**
 
 ```$ docker run -v /my/own/datadir:/docker/data/dir <my image>```
