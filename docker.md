@@ -2,11 +2,6 @@ docker.md
 
 Lets try to remember some docker commands!
 
-**Build image/ dockerfile**: `$ docker build -t <imagename> .`
-* Only run once you have a Dockerfile
-
-**List Docker Images**: `$ docker image ls`
-
 **Example Dockerfile for Go**
 ```
 FROM golang:latest 
@@ -15,6 +10,12 @@ ADD . /app/
 WORKDIR /app 
 RUN go build -o main . 
 CMD ["/app/main"]
+
+**Build image/ dockerfile**: `$ docker build -t <imagename> .`
+* Only run once you have a Dockerfile
+
+**List Docker Images**: `$ docker image ls`
+
 ```
 **Map directory from Docker to local machine**
 
@@ -24,4 +25,5 @@ CMD ["/app/main"]
 **Run bash command on built container**
 
 ```$ docker inspect <container name> | grep IPAddress``` 
+
 Runs `grep IPAddress` on the container, returning the IP Address.
