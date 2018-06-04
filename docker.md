@@ -17,7 +17,11 @@ RUN go build -o main .
 CMD ["/app/main"]
 ```
 **Map directory from Docker to local machine**
+
 ```$ docker run -v /my/own/datadir:/docker/data/dir <my image>```
 
+
 **Run bash command on built container**
-```$ docker inspect <container name> | grep IPAddress``` this will run `grep IPAddress` on the container, returning the IP Address.
+
+```$ docker inspect <container name> | grep IPAddress``` 
+Runs `grep IPAddress` on the container, returning the IP Address.
