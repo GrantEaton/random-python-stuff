@@ -26,4 +26,4 @@ CMD ["/app/main"]
 
 ```$ docker inspect <container name> | grep IPAddress``` 
 
-Runs `grep IPAddress` on the container, returning the IP Address.
+* Runs `grep IPAddress` on the container, returning the IP Address.
