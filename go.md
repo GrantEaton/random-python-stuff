@@ -37,4 +37,5 @@ func main() {
 }
 ```
 
+prints: `1 a 2 3 b 4 c 5 d e main terminated`
 
