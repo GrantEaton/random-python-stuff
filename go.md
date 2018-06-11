@@ -141,3 +141,7 @@ func main() {
 ```
 
 Here, we convert bi-directional channel into a uni-directional channel
+
+##### Buffered Channels and Worker Pools
+
+* https://golangbot.com/buffered-channels-worker-pools/
